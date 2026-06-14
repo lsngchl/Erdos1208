@@ -1,0 +1,927 @@
+% This file was assembled from main.tex, custom.sty, manuscript inputs, and bib/references.bib.
+% Generated on 2026-06-14.
+
+% The filecontents* block writes the embedded bibliography to references.bib.
+% This lets the exported tex file compile without the original bib/references.bib file.
+\begin{filecontents*}{references.bib}
+@misc{ABGLSSTWM26,
+  author       = {Noga Alon and Thomas F. Bloom and W. T. Gowers and Daniel Litt and Will Sawin and Arul Shankar and Jacob Tsimerman and Victor Wang and Melanie Matchett Wood},
+  title        = {Remarks on the disproof of the unit distance conjecture},
+  year         = {2026},
+  eprint       = {2605.20695},
+  archivePrefix = {arXiv}
+}
+
+@misc{Bloom26,
+  author       = {T. F. Bloom},
+  title        = {{Erd{\H{o}}s Problem {\#}1208}},
+  year         = {2026},
+  howpublished = {\url{https://www.erdosproblems.com/1208}},
+  note         = {Accessed 2026-06-14}
+}
+
+@article{Erdos46,
+  author  = {Paul Erd\H{o}s},
+  title   = {On sets of distances of {$n$} points},
+  journal = {American Mathematical Monthly},
+  volume  = {53},
+  number  = {5},
+  pages   = {248--250},
+  year    = {1946}
+}
+
+@article{ErGu70,
+  author  = {Paul Erd\H{o}s and R. K. Guy},
+  title   = {Distinct distances between lattice points},
+  journal = {Elemente der Mathematik},
+  volume  = {25},
+  pages   = {121--123},
+  year    = {1970}
+}
+
+@article{LeTh95,
+  author  = {Hanno Lefmann and Torsten Thiele},
+  title   = {Point sets with distinct distances},
+  journal = {Combinatorica},
+  volume  = {15},
+  number  = {3},
+  pages   = {379--408},
+  year    = {1995},
+  doi     = {10.1007/BF01299744}
+}
+
+@article{Ch13,
+  author  = {Marcos Charalambides},
+  title   = {A note on distinct distance subsets},
+  journal = {Journal of Geometry},
+  volume  = {104},
+  number  = {3},
+  pages   = {439--442},
+  year    = {2013},
+  doi     = {10.1007/s00022-013-0176-0},
+  eprint  = {1211.1776},
+  archivePrefix = {arXiv}
+}
+
+@article{CFGHUZ15,
+  author  = {David Conlon and Jacob Fox and William Gasarch and David G. Harris and Douglas Ulrich and Samuel Zbarsky},
+  title   = {Distinct volume subsets},
+  journal = {SIAM Journal on Discrete Mathematics},
+  volume  = {29},
+  number  = {1},
+  pages   = {472--480},
+  year    = {2015}
+}
+
+@article{GuthKatz15,
+  author  = {Larry Guth and Nets Hawk Katz},
+  title   = {On the {E}rd{\H{o}}s distinct distances problem in the plane},
+  journal = {Annals of Mathematics},
+  volume  = {181},
+  number  = {1},
+  pages   = {155--190},
+  year    = {2015}
+}
+
+@misc{CFRN26,
+  author       = {Felix Christian Clemen and Jakob F\"uhrer and Oliver Roche-Newton},
+  title        = {Geometric {S}idon Problems},
+  year         = {2026},
+  eprint       = {2606.05841},
+  archivePrefix = {arXiv}
+}
+
+@misc{OpenAIUnitDistance26,
+  author = {{OpenAI}},
+  title  = {Planar Point Sets with Many Unit Distances},
+  year   = {2026},
+  note   = {Available from OpenAI}
+}
+
+@misc{PohoataShefferBlog26,
+  author = {Cosmin Pohoata and Adam Sheffer},
+  title  = {Sets with no isosceles triangles / repeated distances in Atlanta},
+  year   = {2026},
+  note   = {Blog post, posted April 27, 2026 and updated June 11, 2026}
+}
+
+@misc{CMPShY26,
+  author = {Ernie Croot and Junzhe Mao and Cosmin Pohoata and Adam Sheffer and Chi Hoi Yip},
+  title  = {A combinatorial large sieve for {S}idon sets, distances, and norm forms},
+  year   = {2026},
+  note   = {Preprint}
+}
+
+@misc{Pohoata26SplitPrimes,
+  author       = {Cosmin Pohoata},
+  title        = {Split primes and the {E}lekes--{R}\'onyai problem},
+  year         = {2026},
+  eprint       = {2606.13619},
+  archivePrefix = {arXiv}
+}
+
+@article{HMR21,
+  author  = {Farshid Hajir and Christian Maire and Ravi Ramakrishna},
+  title   = {Cutting towers of number fields},
+  journal = {Annales Mathématiques du Québec},
+  volume  = {45},
+  pages   = {321--345},
+  year    = {2021}
+}
+
+@book{Neu99,
+  author    = {J{\"u}rgen Neukirch},
+  title     = {Algebraic Number Theory},
+  series    = {Grundlehren der mathematischen Wissenschaften},
+  volume    = {322},
+  publisher = {Springer-Verlag},
+  address   = {Berlin},
+  year      = {1999}
+}
+
+@misc{Mil20,
+  author = {J. S. Milne},
+  title  = {Algebraic Number Theory},
+  year   = {2020},
+  note   = {Version 3.08, available at \url{https://www.jmilne.org/math/CourseNotes/ANT.pdf}}
+}
+
+@book{RZ10,
+  author    = {Luis Ribes and Pavel Zalesskii},
+  title     = {Profinite Groups},
+  edition   = {2},
+  series    = {Ergebnisse der Mathematik und ihrer Grenzgebiete. 3. Folge},
+  volume    = {40},
+  publisher = {Springer-Verlag},
+  address   = {Berlin},
+  year      = {2010}
+}
+\end{filecontents*}
+
+\documentclass{amsart}
+
+
+% ====================
+% Package loading
+% ====================
+
+% Mathematics
+\usepackage{amsmath, amssymb, amsthm}
+
+% Hyperlinks
+\usepackage[colorlinks=true,citecolor=blue]{hyperref}
+
+% ====================
+% Configuration
+% ====================
+
+% Display math settings
+\allowdisplaybreaks
+
+% Theorem environments
+\theoremstyle{plain}
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem*{claim}{Claim}
+
+\theoremstyle{definition}
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem{example}[theorem]{Example}
+
+\theoremstyle{remark}
+\newtheorem{remark}[theorem]{Remark}
+\newtheorem*{note}{Note}
+% \usepackage{draftview} % Comment out this line for the final view.
+
+\title{Planar Point Sets with Small Distinct-Distance Subsets}
+\author{Sungchul Lee}
+\date{\today}
+
+\begin{document}
+
+\begin{abstract}
+Let \(F_2(n)\) denote the minimum, over all \(n\)-point sets in the plane, of the largest size of a subset whose pairwise distances are all distinct.
+The classical square-grid construction gives \(F_2(n)\ll n^{1/2}/(\log n)^{1/4}\).
+We prove that this can be improved by a fixed power: there is an absolute constant \(\varepsilon>0\) such that \(F_2(n)\ll n^{1/2-\varepsilon}\).
+The proof combines two ingredients: the number-field towers of bounded root discriminant used in the OpenAI unit-distance construction, and an argument of Pohoata and Sheffer based on split primes.
+\end{abstract}
+
+\maketitle
+
+% \tableofcontents
+
+\section{Introduction}
+\label{sec:introduction}
+
+For \(n\ge1\), let \(F_2(n)\) be the minimum, over all \(n\)-point sets \(P\subset\mathbb R^2\), of the maximum size of a subset of \(P\) whose pairwise distances are all distinct.
+We call such a subset \emph{distance-Sidon}.
+Equivalently, every \(n\)-point set in the plane contains a distance-Sidon subset of size at least \(F_2(n)\).
+The problem is to determine the order of magnitude of \(F_2(n)\) as \(n\to\infty\).
+This is the planar case of Erd\H{o}s' distance-Sidon subset problem \cite{Bloom26}, rooted in the classical study of distances determined by finite point sets \cite{Erdos46}, \cite{ErGu70}; see also \cite{LeTh95} and \cite{CFGHUZ15}.
+
+Until recently, the long-standing bounds were
+\[
+\frac{n^{1/3}}{(\log n)^{1/3}}
+\ll F_2(n)
+\ll
+\frac{n^{1/2}}{(\log n)^{1/4}}.
+\]
+The upper bound comes from the square integer grid: a \(\sqrt n\times\sqrt n\) grid determines only \(O(n/\sqrt{\log n})\) squared distances, by the classical estimate for integers representable as a sum of two squares, and hence no distance-Sidon subset of the grid can have more than \(O(n^{1/2}/(\log n)^{1/4})\) points.
+The lower bound was proved by Charalambides \cite{Ch13}, using the Guth--Katz distinct-distance machinery \cite{GuthKatz15}.
+Recently Clemen, F\"uhrer and Roche-Newton \cite{CFRN26} removed the logarithmic loss on the lower-bound side, proving \(F_2(n)\gg n^{1/3}\).
+
+Our main result is a polynomial improvement over the upper bound.
+
+\begin{theorem}\label{thm:main}
+There exists an absolute constant \(\varepsilon>0\) such that
+\[
+F_2(n)\ll n^{1/2-\varepsilon}.
+\]
+\end{theorem}
+
+The proof combines two recent ideas.
+The first is the number-field framework used in the OpenAI construction disproving Erd\H{o}s' unit-distance conjecture \cite{OpenAIUnitDistance26}, \cite{ABGLSSTWM26}.
+It provides totally real fields \(L\) of growing degree and bounded root discriminant, together with rational primes \(q\equiv1\pmod4\) which split completely in \(L\).
+We use these fields and split primes to construct point sets with small distance-Sidon subsets.
+
+The second idea is the split-prime isotropic-line sieve of Pohoata and Sheffer for the integer grid \cite{PohoataShefferBlog26}.
+In their argument one chooses primes \(p_i\equiv1\pmod4\), roots \(x_i^2\equiv -1\pmod {p_i}\), and for each sign vector \(\sigma\in\{\pm1\}^t\) considers the congruence system
+\[
+u\equiv \sigma_i x_i v\pmod {p_i}\qquad(1\le i\le t).
+\]
+These are isotropic directions modulo \(d=\prod_i p_i\), and a double count over the \(2^t\) sign vectors bounds distance-Sidon subsets of \([N]^2\) by
+\[
+N\exp\left(-c\frac{\log N}{\log\log N}\right)
+\]
+for an absolute constant \(c>0\).
+See also the combinatorial large-sieve framework announced in \cite{CMPShY26} and the related split-prime amplification in \cite{Pohoata26SplitPrimes}.
+
+Our argument lifts this sieve from \(\mathbb Z^2\) to \(\mathcal O_L^2\).
+If \(q_i\) splits completely in \(L\), then it gives \([L:\mathbb Q]\) prime ideals, and therefore the \(2^t\) local sign choices in the grid become \(2^{t[L:\mathbb Q]}\) choices.
+This tower amplification is the main point: a fixed set of split primes yields a saving exponential in the field degree, and that exponential-in-degree saving becomes a fixed power saving in the number of planar points.
+
+\subsection*{Organization}
+Section~\ref{sec:preliminaries} records the required facts about the number-field tower.
+Section~\ref{sec:point-set-construction} constructs the planar point sets from algebraic boxes.
+Section~\ref{sec:sieve-estimate} proves the tower-amplified split-prime sieve.
+Section~\ref{sec:proof-main-theorem} chooses the parameters and proves Theorem~\ref{thm:main}.
+
+\subsection*{Notation}
+For a finite set \(S\), we write \(\#S\) for its cardinality.
+
+\section{Preliminaries}
+\label{sec:preliminaries}
+
+\subsection{Basic algebraic number theory}
+\label{subsec:basic-algebraic-number-theory}
+
+We use standard terminology from algebraic number theory; see, for example, \cite[Chapter~I]{Neu99} or \cite{Mil20}.
+
+A \emph{number field} \(F\) is a finite extension of \(\mathbb Q\).
+Put \(d=[F:\mathbb Q]\), and let \(\sigma_1,\ldots,\sigma_d:F\hookrightarrow\mathbb C\) be the embeddings of \(F\) into \(\mathbb C\).
+For \(\alpha\in F\), the \emph{trace} of \(\alpha\) is
+\[
+\operatorname{Tr}_{F/\mathbb Q}(\alpha)
+=
+\sum_{k=1}^d\sigma_k(\alpha).
+\]
+Let \(\mathcal O_F\) be the ring of integers of \(F\), i.e.,
+\[
+\mathcal O_F
+=
+\{x\in F:x\text{ is a zero of some monic polynomial over }\mathbb Z\}.
+\]
+Then \(\mathcal O_F\) has a \(\mathbb Z\)-basis \(\omega_1,\ldots,\omega_d\).
+The \emph{discriminant} of \(F\) is
+\[
+\Delta_F
+=
+\det\bigl(\operatorname{Tr}_{F/\mathbb Q}(\omega_i\omega_j)\bigr)_{1\le i,j\le d}.
+\]
+This integer is independent of the choice of integral basis.
+The \emph{root discriminant} of \(F\) is
+\[
+|\Delta_F|^{1/[F:\mathbb Q]}.
+\]
+A number field \(F\) is said to be \emph{totally real} if every embedding \(F\hookrightarrow\mathbb C\) has image in \(\mathbb R\).
+
+A \emph{rational prime} is an ordinary prime number in \(\mathbb Z\).
+Let \(F/\mathbb Q\) be a number field of degree \(d\), and let \(q\) be a rational prime.
+The ring \(\mathcal O_F\) is a Dedekind domain, so every nonzero ideal factors uniquely as a product of prime ideals, and every nonzero prime ideal is maximal; see, for example, \cite[Theorem~3.29, Theorem~3.7, and Definition~3.3]{Mil20}.
+We say that \(q\) \emph{splits completely} in \(F\) if
+\[
+q\mathcal O_F=\mathfrak q_1\cdots\mathfrak q_d
+\]
+as a product of \(d\) distinct prime ideals of \(\mathcal O_F\).
+In this case \(\mathcal O_F/\mathfrak q_k\cong\mathbb F_q\) for \(k=1,\ldots,d\).\footnote{Indeed, if \(q\mathcal O_F=\prod_k\mathfrak q_k^{e_k}\) and \(\#(\mathcal O_F/\mathfrak q_k)=q^{f_k}\), then \(\#(\mathcal O_F/q\mathcal O_F)=q^d\) and the Chinese remainder theorem gives \(d=\sum_k e_kf_k\). In the completely split case there are \(d\) distinct prime ideals and each \(e_k=1\), so every \(f_k=1\).}
+For an infinite algebraic extension \(M/\mathbb Q\), the prime \(q\) is said to split completely in \(M\) if it splits completely in every finite subextension of \(M\).
+
+\subsection{Pro-\texorpdfstring{\(p\)}{p} extensions}
+\label{subsec:pro-p-extensions}
+
+We use standard terminology for pro-\(p\) groups; see, for example, \cite[Chapters~1, 2, and~4]{RZ10}.
+
+An inverse system consists of groups \(G_i\) and homomorphisms \(\phi_{ij}:G_j\to G_i\) for \(i\le j\), satisfying \(\phi_{ii}=\mathrm{id}\) and \(\phi_{ik}=\phi_{ij}\circ\phi_{jk}\) for \(i\le j\le k\).
+Its inverse limit is the group of tuples \((g_i)_i\in\prod_iG_i\) such that \(\phi_{ij}(g_j)=g_i\) for all \(i\le j\).
+A \emph{pro-\(p\) group} is an inverse limit of finite \(p\)-groups, where each finite \(p\)-group is given the discrete topology and the inverse limit is given the subspace topology inherited from \(\prod_iG_i\).
+A \emph{Galois pro-\(p\) extension} \(M/K\) is a Galois extension whose Galois group is a pro-\(p\) group.
+
+\subsection{A tower of totally real fields}
+\label{subsec:number-field-tower}
+
+\cite[Proposition~2.3]{ABGLSSTWM26} states the following result.
+
+\begin{proposition}\label{prop:abglsstwm-tower}
+There exists an infinite tower of totally real fields over \(\mathbb Q\) with bounded root discriminant and with infinitely many completely split primes \(q\equiv1\pmod4\).
+\end{proposition}
+
+Although the following proposition is not stated separately in \cite{ABGLSSTWM26}, it follows because the proof of \cite[Proposition~2.3]{ABGLSSTWM26} obtains the tower from an infinite Galois pro-\(2\) extension of \(\mathbb Q\), constructed using \cite[Theorem~2.8 of the arXiv version, or Theorem~4 of the published version]{HMR21}.
+
+\begin{proposition}\label{prop:tower}
+There exists an infinite tower \(\mathbb Q=F_0\subset F_1\subset F_2\subset\cdots\) of totally real fields over \(\mathbb Q\) such that the following hold.
+\begin{enumerate}
+\item The tower has bounded root discriminant.
+\item Infinitely many rational primes \(q\equiv1\pmod4\) split completely in every \(F_j\).
+\item \([F_j:\mathbb Q]=2^j\) for every \(j\ge0\).
+\end{enumerate}
+\end{proposition}
+
+\begin{proof}
+The proof of Proposition~\ref{prop:abglsstwm-tower} given in \cite{ABGLSSTWM26} supplies an infinite Galois pro-\(2\) extension \(M/\mathbb Q\) whose intermediate fields \(E\) with \(\mathbb Q\subset E\subset M\) and \([E:\mathbb Q]<\infty\) form a tower of totally real fields with bounded root discriminant and with infinitely many completely split primes \(q\equiv1\pmod4\).
+
+It remains only to choose finite layers with degree exactly \(2^j\).
+Let \(G=\operatorname{Gal}(M/\mathbb Q)\).
+Set \(G_0=G\), and suppose \(G_j\) has been chosen.
+Since \(G_j\) is an infinite pro-\(2\) group, it has an open subgroup \(G_{j+1}\subset G_j\) of index \(2\): take a nontrivial finite \(2\)-group quotient of \(G_j\), then take the inverse image of an index-\(2\) subgroup.
+Put \(F_j=M^{G_j}\).\footnote{Here \(M^{G_j}=\{x\in M:\sigma(x)=x\text{ for every }\sigma\in G_j\}\).}
+Then
+\[
+[F_{j+1}:F_j]=[G_j:G_{j+1}]=2,
+\]
+so \([F_j:\mathbb Q]=2^j\).
+\end{proof}
+
+\section{The point set construction}
+\label{sec:point-set-construction}
+
+We fix the tower \(\mathbb Q=F_0\subset F_1\subset F_2\subset\cdots\) from Proposition~\ref{prop:tower}.
+Choose \(D\ge1\) such that every field in this tower has root discriminant at most \(D\).
+
+\subsection{A translated algebraic box}
+\label{subsec:translated-box}
+
+Let \(j\ge0\).
+Write the real embeddings of \(F_j\) as
+\begin{equation}\label{eq:real-embeddings}
+\sigma_{j,1},\ldots,\sigma_{j,2^j}:F_j\hookrightarrow\mathbb R
+\end{equation}
+and let
+\begin{equation}\label{eq:sigma-map}
+\Sigma_j:F_j\to\mathbb R^{2^j},
+\qquad
+\Sigma_j(\alpha)=(\sigma_{j,1}(\alpha),\ldots,\sigma_{j,2^j}(\alpha)).
+\end{equation}
+Then \(\Sigma_j(\mathcal O_{F_j})\) is a lattice of covolume\footnote{Covolume is the volume of a fundamental domain. Since \(F_j\) is totally real, if \(\omega_1,\ldots,\omega_{2^j}\) is a \(\mathbb Z\)-basis of \(\mathcal O_{F_j}\) and \(A=(\sigma_{j,k}(\omega_\ell))_{1\le k,\ell\le 2^j}\), then \(A\) is the real coordinate matrix of the lattice basis \(\Sigma_j(\omega_1),\ldots,\Sigma_j(\omega_{2^j})\), so \(\operatorname{covol}(\Sigma_j(\mathcal O_{F_j}))=|\det A|\). Also \(\bigl(\operatorname{Tr}_{F_j/\mathbb Q}(\omega_k\omega_\ell)\bigr)_{1\le k,\ell\le 2^j}=A^TA\). Hence \(|\Delta_{F_j}|=|\det(A^TA)|=|\det A|^2\).}
+\begin{equation}\label{eq:covolume-bound}
+\operatorname{covol}(\Sigma_j(\mathcal O_{F_j}))
+=|\Delta_{F_j}|^{1/2}
+\le D^{2^j/2}.
+\end{equation}
+
+Fix \(R\ge1\).
+Average \(\#(\Sigma_j(\mathcal O_{F_j})\cap(\tau+[-R/2,R/2]^{2^j}))\) as \(\tau\) ranges over a fundamental domain for \(\Sigma_j(\mathcal O_{F_j})\).
+By \eqref{eq:covolume-bound}, the average is
+\[
+\frac{\operatorname{vol}([-R/2,R/2]^{2^j})}{\operatorname{covol}(\Sigma_j(\mathcal O_{F_j}))}
+=\frac{R^{2^j}}{|\Delta_{F_j}|^{1/2}}
+\ge\left(\frac{R}{\sqrt D}\right)^{2^j}.
+\]
+Thus there exists \(\tau_{j,R}\in\mathbb R^{2^j}\) such that
+\[
+\#\bigl(\Sigma_j(\mathcal O_{F_j})\cap(\tau_{j,R}+[-R/2,R/2]^{2^j})\bigr)
+\ge
+\left(\frac{R}{\sqrt D}\right)^{2^j}.
+\]
+Define
+\begin{equation}\label{eq:B-def}
+B_{j,R}
+:=
+\{a\in\mathcal O_{F_j}:\Sigma_j(a)\in\tau_{j,R}+[-R/2,R/2]^{2^j}\}.
+\end{equation}
+Then
+\begin{equation}\label{eq:B-size}
+\#B_{j,R}\ge\left(\frac{R}{\sqrt D}\right)^{2^j}.
+\end{equation}
+For every \(a,c\in B_{j,R}\), the points \(\Sigma_j(a)\) and \(\Sigma_j(c)\) lie in the same translate of \([-R/2,R/2]^{2^j}\), and hence
+\begin{equation}\label{eq:B-diff}
+|\sigma_{j,k}(a-c)|\le R,
+\qquad
+k=1,\ldots,2^j.
+\end{equation}
+
+\subsection{Projection to the plane}
+\label{subsec:projection-to-plane}
+
+For \(j\) and \(R\), define
+\begin{equation}\label{eq:P-def}
+P_{j,R}
+=
+\{(\sigma_{j,1}(a),\sigma_{j,1}(b)):a,b\in B_{j,R}\}
+\subset\mathbb R^2.
+\end{equation}
+Since \(\sigma_{j,1}\) is injective, \eqref{eq:B-size} gives
+\begin{equation}\label{eq:P-size}
+\#P_{j,R}=(\#B_{j,R})^2
+\ge
+\left(\frac{R}{\sqrt D}\right)^{2^{j+1}}.
+\end{equation}
+Note that the map \(B_{j,R}^2\to P_{j,R}\), \((a,b)\mapsto(\sigma_{j,1}(a),\sigma_{j,1}(b))\), is a bijection.
+Thus a subset \(S\subset P_{j,R}\) corresponds to its inverse image
+\begin{equation}\label{eq:S-lift}
+\{(a,b)\in B_{j,R}^2:(\sigma_{j,1}(a),\sigma_{j,1}(b))\in S\}
+\subset B_{j,R}^2.
+\end{equation}
+In the proof of Theorem~\ref{thm:main}, we choose \(j\) and \(R\) suitably and use \(P_{j,R}\) as the ambient planar set.
+
+\begin{proposition}\label{prop:distance-sidon-lift}
+Let \(S\subset P_{j,R}\), and suppose that all pairwise distances in \(S\) are distinct.
+Let \(A\) be the inverse image of \(S\), as in \eqref{eq:S-lift}.
+Then, for every nonzero \(\eta\in\mathcal O_{F_j}\),
+\begin{equation}\label{eq:sidon-bound}
+\#\{((a,b),(c,d))\in A\times A:
+(a-c)^2+(b-d)^2=\eta\}
+\le2.
+\end{equation}
+\end{proposition}
+
+\begin{proof}
+Let \((a,b)\) and \((c,d)\) be elements of \(A\).
+The squared Euclidean distance between their projections is
+\begin{equation}\label{eq:distance-lift}
+(\sigma_{j,1}(a)-\sigma_{j,1}(c))^2
++(\sigma_{j,1}(b)-\sigma_{j,1}(d))^2
+=
+\sigma_{j,1}\bigl((a-c)^2+(b-d)^2\bigr).
+\end{equation}
+If \((a-c)^2+(b-d)^2=\eta\), then this squared distance is \(\sigma_{j,1}(\eta)\).
+Since \(\eta\ne0\), the two projected endpoints are distinct.
+Since all pairwise distances in \(S\) are distinct, there is at most one unordered pair at this distance, hence at most two ordered pairs.
+\end{proof}
+
+\section{The sieve estimate}
+\label{sec:sieve-estimate}
+
+We bound the size of a subset of \(P_{j,R}\) whose pairwise distances are all distinct.
+
+\subsection{Counting elements in an ideal}
+\label{subsec:counting-elements-in-an-ideal}
+
+For a nonzero ideal \(\mathfrak a\subset\mathcal O_{F_j}\), write \(N\mathfrak a=\#(\mathcal O_{F_j}/\mathfrak a)\).\footnote{See, e.g., \cite[Section~4, ``Norms of ideals,'' before Proposition~4.2]{Mil20}.}
+For \(\alpha\in F_j\), using the embeddings \(\sigma_{j,k}:F_j\hookrightarrow\mathbb R\) from \eqref{eq:real-embeddings}, write \(N_{F_j/\mathbb Q}(\alpha)=\prod_{k=1}^{2^j}\sigma_{j,k}(\alpha)\).\footnote{See, e.g., \cite[Section~2, ``Review of norms and traces,'' especially Corollary~2.20]{Mil20}.}
+Recall from \eqref{eq:sigma-map} that \(\Sigma_j(\alpha)=(\sigma_{j,1}(\alpha),\ldots,\sigma_{j,2^j}(\alpha))\).
+
+\begin{lemma}\label{lem:ideal-box}
+Fix \(j\ge0\), a nonzero ideal \(\mathfrak a\subset\mathcal O_{F_j}\), and \(Y>0\).
+Then
+\[
+\#\{\eta\in\mathfrak a:\Sigma_j(\eta)\in[-Y,Y]^{2^j}\}
+\le
+\left(1+\frac{2Y}{(N\mathfrak a)^{1/2^j}}\right)^{2^j}.
+\]
+\end{lemma}
+
+\begin{proof}
+If \(\eta_1\ne\eta_2\) are two elements of \(\mathfrak a\), then \(\eta_1-\eta_2\) is a nonzero element of \(\mathfrak a\).
+Since \((\eta_1-\eta_2)\subset\mathfrak a\), we have
+\[
+|N_{F_j/\mathbb Q}(\eta_1-\eta_2)|
+=
+N((\eta_1-\eta_2))
+\ge
+N\mathfrak a.
+\]
+On the other hand,
+\[
+|N_{F_j/\mathbb Q}(\eta_1-\eta_2)|
+=
+\prod_{k=1}^{2^j} |\sigma_{j,k}(\eta_1-\eta_2)|.
+\]
+Since this product has \(2^j\) factors and is at least \(N\mathfrak a\), for some \(k\) we have
+\[
+|\sigma_{j,k}(\eta_1)-\sigma_{j,k}(\eta_2)|
+=
+|\sigma_{j,k}(\eta_1-\eta_2)|
+\ge
+(N\mathfrak a)^{1/2^j}.
+\]
+Therefore the points \(\Sigma_j(\eta)\), with \(\eta\in\mathfrak a\), are separated in the sup norm by \((N\mathfrak a)^{1/2^j}\).
+This proves the lemma.
+\end{proof}
+
+\subsection{The sieve argument}
+\label{subsec:sieve-argument}
+
+Let \(t\ge1\) be an integer.
+By Proposition~\ref{prop:tower}, we can choose distinct rational primes \(q_1,\ldots,q_t\) such that each \(q_i\equiv1\pmod4\) and each \(q_i\) splits completely in every \(F_j\).
+Put
+\[
+Q=q_1\cdots q_t.
+\]
+Since \(q_i\) splits completely in \(F_j\),
+\[
+q_i\mathcal O_{F_j}
+=
+\mathfrak q_{i,j,1}\cdots\mathfrak q_{i,j,2^j},
+\]
+where \(\mathcal O_{F_j}/\mathfrak q_{i,j,k}\cong\mathbb F_{q_i}\) for \(k=1,\ldots,2^j\).
+(See Section~\ref{subsec:basic-algebraic-number-theory}.)
+Since \(q_i\equiv1\pmod4\), choose \(x_i\in\mathbb F_{q_i}\) with \(x_i^2=-1\).
+For each \(k\), the inclusion \(\mathbb Z\subset\mathcal O_{F_j}\) induces an isomorphism \(\mathbb F_{q_i}=\mathbb Z/q_i\mathbb Z\to\mathcal O_{F_j}/\mathfrak q_{i,j,k}\), and we use \(x_i\) for the image of \(x_i\) under this isomorphism.
+
+For each sign vector
+\[
+\theta=(\theta_{i,k})_{1\le i\le t,\ 1\le k\le 2^j}
+\in\{\pm1\}^{t\,2^j},
+\]
+define the additive subgroup
+\begin{equation}\label{eq:L-def}
+L_{\theta,j}
+=
+\{(u,v)\in\mathcal O_{F_j}^2:
+u\equiv\theta_{i,k}x_i v\pmod{\mathfrak q_{i,j,k}}
+\text{ for every }i,k\}.
+\end{equation}
+
+\begin{lemma}\label{lem:isotropic-subgroups}
+For every sign vector \(\theta\), we have \([\mathcal O_{F_j}^2:L_{\theta,j}]=Q^{2^j}\).
+Moreover, if \((u,v)\in L_{\theta,j}\), then \(Q\mathcal O_{F_j}\mid u^2+v^2\).
+\end{lemma}
+
+\begin{proof}
+For each prime ideal \(\mathfrak q_{i,j,k}\), the congruence
+\[
+u\equiv\theta_{i,k}x_i v\pmod{\mathfrak q_{i,j,k}}
+\]
+is the kernel of a surjective additive homomorphism
+\[
+(\mathcal O_{F_j}/\mathfrak q_{i,j,k})^2\to\mathcal O_{F_j}/\mathfrak q_{i,j,k},
+\qquad
+(u,v)\mapsto u-\theta_{i,k}x_i v.
+\]
+It therefore has index \(q_i\) modulo \(\mathfrak q_{i,j,k}\).
+The Chinese remainder theorem over all pairs \((i,k)\) gives
+\[
+[\mathcal O_{F_j}^2:L_{\theta,j}]
+=
+\prod_{i=1}^t\prod_{k=1}^{2^j} q_i
+=Q^{2^j}.
+\]
+If \((u,v)\in L_{\theta,j}\), then for every \(i,k\),
+\[
+u^2+v^2
+\equiv
+(\theta_{i,k}^2x_i^2+1)v^2
+=0
+\pmod{\mathfrak q_{i,j,k}}.
+\]
+Since \(Q=q_1\cdots q_t\), we have
+\[
+Q\mathcal O_{F_j}
+=
+\prod_{i=1}^t\prod_{k=1}^{2^j}\mathfrak q_{i,j,k}.
+\]
+Since the prime ideals \(\mathfrak q_{i,j,k}\) are distinct, their intersection is their product.
+Hence \(Q\mathcal O_{F_j}\) divides \(u^2+v^2\).
+\end{proof}
+
+\begin{proposition}\label{prop:sieve}
+For \(t\) sufficiently large, there exists a constant \(0<\rho<1\) such that the following holds.
+If \(R\ge Q\) and \(S\subset P_{j,R}\) has all pairwise distances distinct, then
+\begin{equation}\label{eq:sieve-conclusion}
+\#S\le Q^{2^j}+\left(\frac{R}{\sqrt D}\right)^{2^j}\rho^{2^j}.
+\end{equation}
+\end{proposition}
+
+\begin{proof}
+Let \(A\subset B_{j,R}^2\) be the inverse image of \(S\) under the bijection \(B_{j,R}^2\to P_{j,R}\) from \eqref{eq:S-lift}.
+Put \(\Lambda=\prod_{i=1}^t(1+1/q_i)\).
+Choose \(t\) large enough so that
+\begin{equation}\label{eq:rho-def}
+\rho:=
+\sqrt D\left(\frac{10\Lambda}{2^t}\right)^{1/2}
+<1.
+\end{equation}
+This is possible because every \(q_i\ge5\), so \(\Lambda\le(6/5)^t\), and therefore \(10D\Lambda/2^t\le 10D(3/5)^t\to0\).
+By \eqref{eq:rho-def},
+\[
+R^{2^j}\left(\frac{10\Lambda}{2^t}\right)^{2^j/2}
+=
+\left(\frac{R}{\sqrt D}\right)^{2^j}\rho^{2^j}.
+\]
+Thus, since \(\#S=\#A\), \eqref{eq:sieve-conclusion} follows from
+\begin{equation}\label{eq:sieve-preliminary}
+\#A\le Q^{2^j}+R^{2^j}\left(\frac{10\Lambda}{2^t}\right)^{2^j/2}.
+\end{equation}
+It remains to prove \eqref{eq:sieve-preliminary}.
+If \(\#A<Q^{2^j}\), then \eqref{eq:sieve-preliminary} is immediate.
+Thus assume from now on that \(\#A\ge Q^{2^j}\).
+
+By Lemma~\ref{lem:isotropic-subgroups}, \([\mathcal O_{F_j}^2:L_{\theta,j}]=Q^{2^j}\).
+If \(\#A\) is much larger than \(Q^{2^j}\), then there must be many \((p,p')\in A\times A\) with \(p\ne p'\) and \(p-p'\in L_{\theta,j}\).
+Accordingly, we count triples
+\begin{equation}\label{eq:T-def}
+T=
+\#\{(p,p',\theta)\in A\times A\times\{\pm1\}^{t2^j}:
+p\ne p',\ p-p'\in L_{\theta,j}\}.
+\end{equation}
+For a fixed sign vector \(\theta\), let \(C_1,\ldots,C_{Q^{2^j}}\) be the \(L_{\theta,j}\)-cosets in \(\mathcal O_{F_j}^2\).
+Then
+\[
+A=\bigsqcup_{s=1}^{Q^{2^j}} (A\cap C_s).
+\]
+Put \(n_s=\#(A\cap C_s)\).
+Then \(\sum_{s=1}^{Q^{2^j}} n_s=\#A\), and the number of \((p,p')\in A\times A\) with \(p\ne p'\) and \(p-p'\in L_{\theta,j}\) is
+\[
+\sum_{s=1}^{Q^{2^j}} n_s(n_s-1)
+=
+\sum_{s=1}^{Q^{2^j}} n_s^2-\#A
+\ge
+\frac{(\#A)^2}{Q^{2^j}}-\#A
+=
+\frac{\#A(\#A-Q^{2^j})}{Q^{2^j}}.
+\]
+Summing over the \(2^{t2^j}\) sign vectors gives
+\begin{equation}\label{eq:T-lower}
+T\ge
+2^{t2^j}\frac{\#A(\#A-Q^{2^j})}{Q^{2^j}}.
+\end{equation}
+
+We next prove an upper bound for \(T\).
+For \((u,v)\in\mathcal O_{F_j}^2\), set
+\begin{align*}
+r(u,v)&=\#\{(p,p')\in A\times A:p-p'=(u,v)\},\\
+w(u,v)&=\#\{\theta\in\{\pm1\}^{t2^j}:(u,v)\in L_{\theta,j}\}.
+\end{align*}
+By \eqref{eq:T-def},
+\begin{equation}\label{eq:T-rw}
+T=\sum_{(u,v)\ne(0,0)} r(u,v)w(u,v).
+\end{equation}
+
+By \eqref{eq:L-def},
+\[
+w(u,v)
+=
+\prod_{i=1}^t\prod_{k=1}^{2^j}w_{i,j,k}(u,v),
+\]
+where
+\[
+w_{i,j,k}(u,v)
+=
+\#\{\theta\in\{\pm1\}:u\equiv\theta x_i v\pmod{\mathfrak q_{i,j,k}}\}.
+\]
+Suppose \(w(u,v)>0\).
+Let
+\[
+E=
+\{(i,k):1\le i\le t,\ 1\le k\le 2^j,\ w_{i,j,k}(u,v)=2\}.
+\]
+Then \(w(u,v)=2^{\#E}\).
+Since \(w(u,v)>0\), every \(\mathfrak q_{i,j,k}\) has \(w_{i,j,k}(u,v)\ge1\), and hence \(\mathfrak q_{i,j,k}\mid u^2+v^2\).
+If \((i,k)\in E\), then
+\[
+u\equiv x_i v\pmod{\mathfrak q_{i,j,k}},
+\qquad
+u\equiv -x_i v\pmod{\mathfrak q_{i,j,k}}.
+\]
+Subtracting gives \(2x_i v\equiv0\pmod{\mathfrak q_{i,j,k}}\).
+Since \(2x_i\ne0\) in \(\mathcal O_{F_j}/\mathfrak q_{i,j,k}\cong\mathbb F_{q_i}\), this gives \(v\equiv0\pmod{\mathfrak q_{i,j,k}}\), and then \(u\equiv0\pmod{\mathfrak q_{i,j,k}}\).
+Thus \(\mathfrak q_{i,j,k}^2\mid u^2+v^2\) for every \((i,k)\in E\).
+For every subset \(E'\subset E\), put
+\[
+\mathfrak b=\prod_{(i,k)\in E'}\mathfrak q_{i,j,k}.
+\]
+Then \(\mathfrak b\mid Q\mathcal O_{F_j}\) and \(Q\mathfrak b\mid u^2+v^2\).
+Therefore we obtain
+\begin{equation}\label{eq:w-bound}
+w(u,v)
+\le
+2^{\#E}
+\le
+\#\{\mathfrak b\mid Q\mathcal O_{F_j} : Q\mathfrak b\mid u^2+v^2\}.
+\end{equation}
+The bound \eqref{eq:w-bound} is immediate if \(w(u,v)=0\).
+
+By Proposition~\ref{prop:distance-sidon-lift}, for every nonzero \(\eta\in\mathcal O_{F_j}\),
+\begin{equation}\label{eq:sidon-bound-difference}
+\sum_{u^2+v^2=\eta} r(u,v)\le2.
+\end{equation}
+Also, since \(F_j\) is totally real, \(u^2+v^2=0\) implies \(u=v=0\); hence \(\eta=0\) contributes nothing to \(T\), where \((u,v)\ne(0,0)\).
+
+For \((u,v)\in A-A\), \eqref{eq:B-diff} gives
+\[
+|\sigma_{j,k}(u)|\le R,
+\qquad
+|\sigma_{j,k}(v)|\le R,
+\qquad
+k=1,\ldots,2^j.
+\]
+Therefore
+\begin{equation}\label{eq:eta-box}
+\Sigma_j(u^2+v^2)\in[-2R^2,2R^2]^{2^j}.
+\end{equation}
+Combining \eqref{eq:T-rw}, \eqref{eq:w-bound}, \eqref{eq:sidon-bound-difference}, and \eqref{eq:eta-box} gives
+\begin{align}
+T
+&=
+\sum_{(u,v)\ne(0,0)} r(u,v)w(u,v)
+\notag\\
+&\le
+\sum_{(u,v)\ne(0,0)} r(u,v)
+\sum_{\mathfrak b\mid Q\mathcal O_{F_j},\ Q\mathfrak b\mid u^2+v^2}1
+\notag\\
+&\le
+\sum_{\mathfrak b\mid Q\mathcal O_{F_j}}
+\sum_{\substack{0\ne\eta\in Q\mathfrak b\\
+\Sigma_j(\eta)\in[-2R^2,2R^2]^{2^j}}}
+\sum_{u^2+v^2=\eta}r(u,v)
+\notag\\
+&\le
+2\sum_{\mathfrak b\mid Q\mathcal O_{F_j}}
+\#\{\eta\in Q\mathfrak b:\Sigma_j(\eta)\in[-2R^2,2R^2]^{2^j}\}.
+\label{eq:T-upper-prebox}
+\end{align}
+
+By multiplicativity of the ideal norm, the factorization
+\[
+Q\mathcal O_{F_j}
+=
+\prod_{i=1}^t\prod_{k=1}^{2^j}\mathfrak q_{i,j,k}
+\]
+and the equality \(N\mathfrak q_{i,j,k}=\#(\mathcal O_{F_j}/\mathfrak q_{i,j,k})=\#\mathbb F_{q_i}=q_i\) give
+\[
+N(Q\mathcal O_{F_j})
+=
+\prod_{i=1}^t\prod_{k=1}^{2^j}q_i
+=
+Q^{2^j}.
+\]
+Thus
+\begin{equation}\label{eq:N-Qb}
+(N(Q\mathfrak b))^{1/2^j}
+=
+(N(Q\mathcal O_{F_j})N\mathfrak b)^{1/2^j}
+=
+Q(N\mathfrak b)^{1/2^j}.
+\end{equation}
+Also, since \(\mathfrak b\mid Q\mathcal O_{F_j}\), we have \((N\mathfrak b)^{1/2^j}\le Q\).
+Because \(R\ge Q\),
+\begin{equation}\label{eq:R-b-lower}
+\frac{R^2}{Q(N\mathfrak b)^{1/2^j}}\ge1.
+\end{equation}
+Applying Lemma~\ref{lem:ideal-box} to \(\mathfrak a=Q\mathfrak b\) and \(Y=2R^2\), and using \eqref{eq:N-Qb} and \eqref{eq:R-b-lower}, we get
+\[
+\#\{\eta\in Q\mathfrak b:\Sigma_j(\eta)\in[-2R^2,2R^2]^{2^j}\}
+\le
+\left(1+\frac{4R^2}{(N(Q\mathfrak b))^{1/2^j}}\right)^{2^j}
+\le
+\left(\frac{5R^2}{Q}\right)^{2^j}\frac1{N\mathfrak b}.
+\]
+Substituting this into \eqref{eq:T-upper-prebox} gives
+\[
+T
+\le
+\left(\frac{10R^2}{Q}\right)^{2^j}
+\sum_{\mathfrak b\mid Q\mathcal O_{F_j}}\frac1{N\mathfrak b}.
+\]
+Because \(N\mathfrak q_{i,j,k}=q_i\) for every \(k\),
+\[
+\sum_{\mathfrak b\mid Q\mathcal O_{F_j}}\frac1{N\mathfrak b}
+=
+\prod_{i=1}^t\prod_{k=1}^{2^j}
+\left(1+\frac1{N\mathfrak q_{i,j,k}}\right)
+=
+\prod_{i=1}^t\prod_{k=1}^{2^j}
+\left(1+\frac1{q_i}\right)
+=
+\Lambda^{2^j}.
+\]
+Hence
+\begin{equation}\label{eq:T-upper}
+T\le
+\left(\frac{10R^2\Lambda}{Q}\right)^{2^j}.
+\end{equation}
+
+Comparing \eqref{eq:T-lower} and \eqref{eq:T-upper}, we obtain
+\[
+2^{t2^j}\frac{\#A(\#A-Q^{2^j})}{Q^{2^j}}
+\le
+\left(\frac{10R^2\Lambda}{Q}\right)^{2^j}.
+\]
+Therefore
+\[
+\#A(\#A-Q^{2^j})
+\le
+\left(\frac{10R^2\Lambda}{2^t}\right)^{2^j}.
+\]
+Since \(\#A\ge Q^{2^j}\), we have \((\#A-Q^{2^j})^2\le \#A(\#A-Q^{2^j})\), and hence
+\[
+\#A-Q^{2^j}
+\le
+R^{2^j}\left(\frac{10\Lambda}{2^t}\right)^{2^j/2}.
+\]
+This proves \eqref{eq:sieve-preliminary}.
+\end{proof}
+
+\section{Proof of Theorem~\ref{thm:main}}
+\label{sec:proof-main-theorem}
+
+Choose \(t\) large enough so that Proposition~\ref{prop:sieve} applies.
+We use the corresponding primes \(q_1,\ldots,q_t\), the product \(Q=q_1\cdots q_t\), and the constant \(0<\rho<1\) from Section~\ref{subsec:sieve-argument}.
+Choose a real number \(a>\log Q\).
+
+Let \(n\) be sufficiently large.
+Let \(j\ge0\) be the integer satisfying
+\begin{equation}\label{eq:j-choice}
+\frac{\log n}{4a}<2^j\le\frac{\log n}{2a}.
+\end{equation}
+Put \(R=\sqrt D\,n^{1/2^{j+1}}\).
+The upper bound in \eqref{eq:j-choice} gives
+\[
+\log\left(\frac{R}{\sqrt D}\right)
+=
+\frac{\log n}{2^{j+1}}
+\ge a,
+\]
+so \(R\ge\sqrt D\,e^a\ge Q\).
+
+Let \(B_{j,R}\) and \(P_{j,R}\) be as in \eqref{eq:B-def} and \eqref{eq:P-def}.
+By \eqref{eq:P-size},
+\[
+\#P_{j,R}
+\ge
+\left(\frac{R}{\sqrt D}\right)^{2^{j+1}}
+=n.
+\]
+Let \(P_n\subset P_{j,R}\) be any \(n\)-point subset.
+
+Let \(S\subset P_n\) have all pairwise distances distinct.
+Since \(S\subset P_{j,R}\), Proposition~\ref{prop:sieve} gives
+\[
+\#S
+\le
+Q^{2^j}+
+\left(\frac{R}{\sqrt D}\right)^{2^j}\rho^{2^j}
+=
+Q^{2^j}+n^{1/2}\rho^{2^j}.
+\]
+By \eqref{eq:j-choice},
+\[
+Q^{2^j}
+=
+\exp(2^j\log Q)
+\le
+\exp\left(\frac{\log Q}{2a}\log n\right)
+=
+n^{\log Q/(2a)}
+\]
+and
+\[
+n^{1/2}\rho^{2^j}
+=
+n^{1/2}\exp(2^j\log\rho)
+\le
+n^{1/2}\exp\left(\frac{\log\rho}{4a}\log n\right)
+=
+n^{1/2+\log\rho/(4a)},
+\]
+we may choose \(\varepsilon>0\) such that
+\[
+\frac{\log Q}{2a}\le\frac12-\varepsilon,
+\qquad
+\frac12+\frac{\log\rho}{4a}\le\frac12-\varepsilon.
+\]
+Then
+\[
+\#S\le2n^{1/2-\varepsilon}.
+\]
+Thus every subset of \(P_n\) with all pairwise distances distinct has size at most \(2n^{1/2-\varepsilon}\).
+Consequently
+\[
+F_2(n)
+\le
+2n^{1/2-\varepsilon}
+\]
+for all sufficiently large \(n\).
+
+\section*{Use of AI}
+
+During the preparation of this work, the author used OpenAI's GPT-5.5 Pro to explore possible proof strategies and to obtain methodological ideas behind the argument.
+After using this tool, the author independently verified the mathematical details, refined the exposition, and takes full responsibility for the final manuscript.
+
+
+\bibliographystyle{amsplain}
+\bibliography{references}
+
+\end{document}
